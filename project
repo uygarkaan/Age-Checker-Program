@@ -1,0 +1,25 @@
+// Import the Scanner class from the library for user input
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user to enter their age
+        System.out.println("Please enter your age:");
+
+        // Get the age value
+        int age = scanner.nextInt();
+
+        // Print appropriate message based on the age value
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are not an adult.");
+        }
+
+        // Close the Scanner object
+        scanner.close();
+    }
+}
